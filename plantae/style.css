@@ -1,0 +1,439 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #e8ffe8;
+    color: #214a2b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*index*/
+.home {
+    background-color: #eaffd4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home .logo {
+    width: 200px;
+}
+
+.home h2 {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.home p {
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #98c57e;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #7ba967;
+}
+
+.decoracao {
+    position: absolute;
+    width: 200px;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.decoracao.esquerda {
+    top: 0;
+    left: 0;
+}
+
+.decoracao.direita {
+    bottom: 0;
+    right: 0;
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+}
+
+/*catalogo*/
+header {
+    background-color: #eaffd4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 2px solid #214a2b;
+}
+
+header .logo img {
+    width: 70px;
+}
+
+header nav {
+    display: flex;
+    gap: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #214a2b;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+header nav a:hover {
+    background-color: #98c57e;
+    color: white;
+}
+
+.search {
+    font-size: 25px;
+}
+
+.catalogo {
+    display: flex;
+    padding: 30px 40px;
+}
+
+.lista {
+    flex: 3;
+}
+
+.lista h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.card span {
+    color: #607d3b;
+    font-weight: normal;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.card a {
+    color: #4c7135;
+}
+
+.filtros {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.filtros h3 {
+    font-size: 1.3em;
+}
+
+.filtros ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+.filtros li {
+    margin: 5px 0;
+}
+
+/*palestras e oficinas*/
+.banner {
+  position: relative
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.titulo-sobreposto {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e8ffe8;
+  padding: 15px 40px;
+}
+
+.titulo-sobreposto h2 {
+  color: #1f3312;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.palestras-oficinas {
+  text-align: center;
+
+}
+
+.palestras-oficinas h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #1f3312;
+  font-weight: 700;
+}
+
+.carts {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cart {
+  background-color: #c7f3a8;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.cart i {
+  font-size: 28px;
+  color: #2e5b1f;
+}
+
+.cart p {
+  font-weight: 600;
+  color: #2e5b1f;
+}
+
+.cart:hover {
+  background-color: #9be282;
+  transform: scale(1.1);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.content img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 5px;  
+}
+
+.text {
+    background-color: #e2f5d5;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.text h2 {
+    margin-top: 0;
+    color: #204020;
+}
+
+.text p {
+    line-height: 1.6;
+    color: #204020;
+}
+
+.simb{
+    max-width: 60px;
+}
+
+/*comunidades*/
+main {
+  position: relative;
+  padding: 40px 70px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.carfs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.carf {
+  background-color: #b5f2a0;
+  height: 120px;
+  border-radius: 25px;
+}
+
+/*contato*/
+
+.contato {
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contato h2{
+    position: relative;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: 700;
+    color: #1b4d3e;
+    margin: -25px auto 40px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.info {
+    background-color: #f0fff0;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: #1b4d3e;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.info .email {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.info .frase {
+    font-style: italic;
+    color: #5b7052;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.form {
+    background-color: #f0fff0;
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form .linha {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: none;
+    background-color: #e8f5e9;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    outline: none;
+    color: #2e7d32;
+}
+
+.form textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.form button {
+    display: block;
+    margin-left: auto;
+    padding: 8px 20px;
+    background-color: #a5d6a7;
+    border: none;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #1b4d3e;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form button:hover {
+    background-color: #81c784;
+}
+
+/*rodapé*/
+footer {
+    background-color: #c8e6c9;
+    text-align: center;
+    padding: 10px 0;
+    color: #1b4d3e;
+    font-size: 0.85rem;
+}
+
+main{
+    flex: 1;
+}
