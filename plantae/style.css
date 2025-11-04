@@ -111,8 +111,90 @@ header nav a:hover {
     color: white;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #476b4a;
+}
+
+.logo img {
+  width: 40px;
+}
+
+/* Caixa de pesquisa */
 .search {
-    font-size: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f8fff7;
+  border: 2px solid #b5e0b0;
+  border-radius: 30px;
+  padding: 5px 15px;
+  width: 350px;
+  transition: all 0.3s ease;
+}
+
+.search:hover {
+  box-shadow: 0 0 10px rgba(181, 224, 176, 0.6);
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 15px;
+  color: #3f6446;
+  outline: none;
+}
+
+#search-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#search-btn img {
+  width: 22px;
+  filter: brightness(0) saturate(100%) invert(39%) sepia(12%) saturate(687%) hue-rotate(74deg) brightness(95%) contrast(91%);
+}
+
+/* Sugestões de pesquisa */
+.suggestions {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #f8fff7;
+  border: 2px solid #b5e0b0;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.suggestions p {
+  padding: 8px 15px;
+  color: #4e6e56;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.suggestions p:hover {
+  background-color: #d8f2d2;
+}
+
+.suggestions span {
+  font-weight: 600;
+  color: #3d7252;
+}
+
+/* Mostrar sugestões ao focar */
+.search input:focus + #search-btn + .suggestions,
+.search:hover .suggestions {
+  display: flex;
 }
 
 .catalogo {
