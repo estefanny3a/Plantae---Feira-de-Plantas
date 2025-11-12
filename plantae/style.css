@@ -391,21 +391,60 @@ h2 {
 }
 
 .subtitulo {
-  font-size: 14px;
-  margin-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .carfs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .carf {
-  background-color: #b5f2a0;
-  height: 120px;
-  border-radius: 25px;
+  position: relative;
+  width: 220px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.carf:hover {
+  transform: scale(1.03);
+}
+
+.carf img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* bloco verde sobreposto */
+.carf .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #547b5b;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color:#d5f5d1;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.carf .info h3 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+  color:#fff;
+}
+
+.carf .info p {
+  font-size: 13px;
+  margin: 3px 0 0 0;
+  opacity: 0.85;
 }
 
 /*contato*/
@@ -641,4 +680,3 @@ input {
 .filtros button:hover {
   background-color: #c8edc0;
 }
-
