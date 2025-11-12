@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //chatbot
-
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.chat-toggle');
   const chatWindow = document.querySelector('.chat-window');
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('chatText');
   const chatBody = document.getElementById('chatBody');
 
-  // Abre / fecha o chat
   toggle.addEventListener('click', () => {
     if (chatWindow.style.display === 'flex') {
       chatWindow.style.display = 'none';
@@ -36,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Envia mensagem do usuário
   sendBtn.addEventListener('click', () => {
     const text = input.value.trim();
     if (text !== '') {
@@ -47,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
       input.value = '';
       chatBody.scrollTop = chatBody.scrollHeight;
 
-      // Resposta automática
       setTimeout(() => {
         const botMsg = document.createElement('div');
         botMsg.classList.add('msg', 'bot');
