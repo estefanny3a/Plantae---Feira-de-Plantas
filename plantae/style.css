@@ -1,11 +1,11 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background-color: #e8ffe8;
-    color: #214a2b;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #e8ffe8;
+  color: #214a2b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*index*/
@@ -22,10 +22,14 @@ body {
 
 .home-content {
     max-width: 600px;
+    text-align: center;
 }
 
 .home .logo {
-    width: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  width: 120px;
 }
 
 .home h2 {
@@ -533,12 +537,14 @@ main{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
 }
 
 .contaner {
   width: 100%;
   max-width: 400px;
   padding: 20px;
+  text-align: center;
 }
 
 .carv {
@@ -574,6 +580,7 @@ label {
   color: #486b50;
   font-weight: 600;
   margin-bottom: 5px;
+  
 }
 
 input {
@@ -618,6 +625,20 @@ input {
 }
 
 .login img{
-    width: 70px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.filtros button {
+  background-color: #e5f7e0;
+  border: 1px solid #7cbf7f;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filtros button:hover {
+  background-color: #c8edc0;
 }
 

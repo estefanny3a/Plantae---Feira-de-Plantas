@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantae - Catálogo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -37,7 +38,7 @@
         <section class="lista">
             <h2>Populares</h2>
             <div class="cards">
-                <div class="card">
+                <div class="card" data-tipo="angiospermas">
                     <img src=imagens/rosa.jpg alt="Rosa">
                     <h3>Rosa <span>(Rosa)</span></h3>
                     <p>
@@ -46,7 +47,7 @@
                         São arbustos ou trepadeiras. […]
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" data-tipo="angiospermas">
                     <img src=imagens/cacto.jpg alt="Cacto">
                     <h3>Cacto <span>(Cactaceae)</span></h3>
                     <p>
@@ -60,17 +61,15 @@
 
         <aside class="filtros">
             <h3>Filtros</h3>
-            <h4>Tipos</h4>
             <ul>
-                <li>briófitas</li>
-                <li>pteridófitas</li>
-                <li>gimnospermas</li>
-                <li>angiospermas</li>
+                <li><button class="filtro" data-filtro="briófitas">Briófitas</button></li>
+                <li><button class="filtro" data-filtro="pteridófitas">Pteridófitas</button></li>
+                <li><button class="filtro" data-filtro="gimnospermas">Gimnospermas</button></li>
+                <li><button class="filtro" data-filtro="angiospermas">Angiospermas</button></li>
+                <li><button class="filtro" data-filtro="todos">Mostrar todos</button></li>
             </ul>
-            <h4>Tamanho</h4>
-            <h4>Ambiente</h4>
-            <h4>Nível de cuidado</h4>
         </aside>
+
     </main>
 
     <footer>
