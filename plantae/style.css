@@ -319,11 +319,15 @@ header nav a:hover {
 .card {
   border-radius: 10px;
   padding: 15px;
+  position: relative;
+  width: fit-content;
 }
 
 .card img {
-  width: 100%;
-  border-radius: 8px;
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .card h3 {
@@ -343,6 +347,28 @@ header nav a:hover {
 
 .card a {
   color: #4c7135;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 110%;
+  width: 260px;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+  transition: 0.25s ease;
+  z-index: 50;
+}
+
+.card:hover .popup {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
 }
 
 .filtros {
