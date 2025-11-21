@@ -476,7 +476,7 @@ header nav a:hover {
 .content {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
   max-width: 1000px;
   margin: 50px auto;
@@ -510,6 +510,25 @@ header nav a:hover {
 .simb {
   max-width: 60px;
 }
+
+.btn-video {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #5c8b5a;
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-top: 15px;
+  cursor:pointer;
+}
+
+.btn-video:hover {
+  background-color: #476c46;
+  transform: scale(1.05);
+}
+
 
 /*comunidades*/
 main {
