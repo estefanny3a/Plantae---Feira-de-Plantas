@@ -262,7 +262,7 @@ header nav a:hover {
 
 .suggestions {
   position: absolute;
-  top: 45px;
+  top: 100%;
   left: 0;
   background-color: #f8fff7;
   border: 2px solid #b5e0b0;
@@ -272,6 +272,7 @@ header nav a:hover {
   display: none;
   flex-direction: column;
   z-index: 10;
+  overflow: hidden;
 }
 
 .suggestions p {
@@ -521,7 +522,7 @@ header nav a:hover {
   text-decoration: none;
   transition: 0.3s ease;
   margin-top: 15px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .btn-video:hover {
