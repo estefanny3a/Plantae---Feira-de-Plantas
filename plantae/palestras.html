@@ -44,19 +44,24 @@
   <section class="palestras-oficinas">
 
     <div class="carts">
-      <div class="cart">
+      <div class="cart" data-filtro="palestra">
         <i class="fas fa-chalkboard-teacher"></i>
         <img class="simb" src="imagens/palestras.png">
         <p>Palestras</p>
       </div>
-      <div class="cart">
+      <div class="cart" data-filtro="oficina">
         <i class="fas fa-cogs"></i>
         <img class="simb" src="imagens/oficinas.png">
         <p>Oficinas</p>
       </div>
+      <div class="cart" onclick="location.reload();">
+        <i class="fas fa-cogs"></i>
+        <img class="simb" src="imagens/agenda.png">
+        <p>Todos</p>
+      </div>
     </div>
 
-    <div class="content">
+    <div class="content" data-tipo="palestra">
       <img src="imagens/palestra1.jpg">
       <div class="text">
         <h2>Como as plantas transformaram a medicina</h2>
@@ -73,7 +78,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content" data-tipo="oficina">
       <img src="imagens/oficina1.png">
       <div class="text">
         <h2>5 segredos pra planta dar flor</h2>
@@ -91,7 +96,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content" data-tipo="palestra">
       <img src="imagens/palestra2.jpg">
       <div class="text">
         <h2>Paisagismo e jardinagem</h2>
@@ -107,7 +112,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content" data-tipo="palestra">
       <img src="imagens/palestra3.jpg">
       <div class="text">
         <h2>Plantas de cores fortes: as lindas Crótons e as Ficus da Magna Flora.</h2>
@@ -123,7 +128,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content" data-tipo="oficina">
       <img src="imagens/oficina2.jpg">
       <div class="text">
         <h2>Como fazer uma horta suspensa</h2>
@@ -143,7 +148,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content" data-tipo="oficina">
       <img src="imagens/oficina3.jpg">
       <div class="text">
         <h2>como cultivar mudas frutíferas em casa</h2>
