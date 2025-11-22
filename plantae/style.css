@@ -16,22 +16,23 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px;
+  padding: 2.5rem;
   position: relative;
 }
 
 .home-content {
-  max-width: 600px;
+  max-width: 37.5rem;
   text-align: center;
   position: relative;
   z-index: 1;
 }
 
 .home .logo {
-  width: 200px;
+  width: 12vw;
   display: block;
   margin: 0 auto;
-  width: 120px;
+  max-width: 7.5rem;
+  min-width: 3.5rem;
 }
 
 .home h2 {
@@ -146,7 +147,7 @@ input {
 }
 
 .btn {
-  background-color: #8cbf9f;
+  background-color: #486b50;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -161,9 +162,13 @@ input {
 }
 
 .btn.visitante {
-  background-color: #6e8b74;
+  background-color:#607d3b;
   width: 100%;
   margin-top: 10px;
+}
+
+.btn.visitante:hover{
+  background-color: #90b65e;
 }
 
 .social-login {
