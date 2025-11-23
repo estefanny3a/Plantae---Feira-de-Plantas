@@ -22,14 +22,20 @@
       <a href="contato.html">Contato</a>
     </nav>
     <div class="search">
-      <input type="text" id="search" placeholder="Pesquisar">
+      <input type="text" id="searchInput" placeholder="Pesquisar">
       <button id="search-btn">
         <h1>🔍︎</h1>
       </button>
-      <div class="suggestions">
-        <p>Pesquisar em <span>Plantas</span></p>
-        <p>Pesquisar em <span>Comunidades</span></p>
-        <p>Pesquisar em <span>Palestras e Oficinas</span></p>
+      <div class="suggestions" id="searchOptions">
+        <div class="option" data-page="catalogo.html">
+          <p>Pesquisar em <span>Catálogo</span></p>
+        </div>
+        <div class="option" data-page="palestras.html">
+          <p>Pesquisar em <span>Palestras e Oficinas</span></p>
+        </div>
+        <div class="option" data-page="comunidade.html">
+          <p>Pesquisar em <span>Comunidades</span></p>
+        </div>
       </div>
     </div>
   </header>

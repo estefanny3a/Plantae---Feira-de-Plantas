@@ -74,3 +74,89 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+//pesquisa
+document.addEventListener("DOMContentLoaded", () => {
+
+  const searchInput = document.getElementById("searchInput");
+  const searchOptions = document.querySelectorAll(".option");
+
+  searchOptions.forEach(opt => {
+    opt.addEventListener("click", () => {
+      const page = opt.getAttribute("data-page");
+      const termo = searchInput.value.trim();
+
+      if (termo !== "") {
+        window.location.href = `${page}?q=${encodeURIComponent(termo)}`;
+      } else {
+        window.location.href = page;
+      }
+    });
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  const termoBuscado = params.get("q");
+  if (termoBuscado) {
+    searchInput.value = termoBuscado.toLowerCase();
+  }
+
+  const url = window.location.pathname;
+
+  if (url.includes("catalogo.html")) {
+
+    const cards = document.querySelectorAll(".card");
+
+    function filtrarCatalogo() {
+      const termo = searchInput.value.toLowerCase();
+
+      cards.forEach(card => {
+        const nome = card.querySelector("h3").textContent.toLowerCase();
+
+        card.style.display = nome.includes(termo) ? "block" : "none";
+      });
+    }
+
+    filtrarCatalogo();
+    searchInput.addEventListener("input", filtrarCatalogo);
+  }
+
+  if (url.includes("palestras.html")) {
+
+    const itens = document.querySelectorAll(".content");
+
+    function filtrarPalestras() {
+      const termo = searchInput.value.toLowerCase();
+
+      itens.forEach(item => {
+        const texto = item.textContent.toLowerCase();
+
+        item.style.display = texto.includes(termo) ? "flex" : "none";
+      });
+    }
+
+    filtrarPalestras();
+    searchInput.addEventListener("input", filtrarPalestras);
+  }
+
+  if (url.includes("comunidade.html")) {
+
+    const comunidades = document.querySelectorAll(".carf");
+
+    function filtrarComunidades() {
+      const termo = searchInput.value.toLowerCase();
+
+      comunidades.forEach(item => {
+        const texto = item.textContent.toLowerCase();
+
+        item.style.display = texto.includes(termo) ? "flex" : "none";
+      });
+    }
+
+    filtrarComunidades();
+    searchInput.addEventListener("input", filtrarComunidades);
+  }
+
+});
+
+
+
