@@ -186,6 +186,15 @@ input {
   width: 100px;
 }
 
+.btn.log{
+  background-color:#44533f;
+  margin-top: 10px;
+}
+
+.btn.log:hover{
+  background-color:#95b48a;
+}
+
 /*cabecário*/
 header {
   background-color: #eaffd4;
