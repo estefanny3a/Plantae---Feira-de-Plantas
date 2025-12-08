@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantae - Palestras e Oficinas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src=imagens/logo.png alt="logo plantae">
+    </div>
+
+    <nav>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="palestras.html">Palestras e Oficinas</a>
+      <a href="comunidade.html">Comunidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Pesquisar">
+      <button id="search-btn">
+        <h1>🔍︎</h1>
+      </button>
+      <div class="suggestions" id="searchOptions">
+        <div class="option" data-page="catalogo.html">
+          <p>Pesquisar em <span>Catálogo</span></p>
+        </div>
+        <div class="option" data-page="palestras.html">
+          <p>Pesquisar em <span>Palestras e Oficinas</span></p>
+        </div>
+        <div class="option" data-page="comunidade.html">
+          <p>Pesquisar em <span>Comunidades</span></p>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+  <section class="banner">
+    <img src="imagens/banner.png" alt="Banner palestra">
+    <div class="titulo-sobreposto">
+      <h2>PALESTRAS E OFICINAS</h2>
+    </div>
+  </section>
+
+  <section class="palestras-oficinas">
+
+    <div class="carts">
+      <div class="cart" data-filtro="palestra">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <img class="simb" src="imagens/palestras.png" alt="">
+        <p>Palestras</p>
+      </div>
+      <div class="cart" data-filtro="oficina">
+        <i class="fas fa-cogs"></i>
+        <img class="simb" src="imagens/oficinas.png" alt="">
+        <p>Oficinas</p>
+      </div>
+      <div class="cart" onclick="location.reload();">
+        <i class="fas fa-cogs"></i>
+        <img class="simb" src="imagens/agenda.png" alt="">
+        <p>Todos</p>
+      </div>
+    </div>
+
+    <div class="content" data-tipo="palestra">
+      <img src="imagens/palestra1.jpg" alt="Palestra 1">
+      <div class="text">
+        <h2>Como as plantas transformaram a medicina</h2>
+        <p>
+          Átila Lamarino explica que muitas plantas produzem substâncias que podem agir como remédios no nosso corpo, e
+          vários medicamentos famosos — como a aspirina e o quinino — vieram delas. Ele destaca que a biodiversidade,
+          especialmente no Brasil, é uma grande fonte de possíveis novos tratamentos e que destruir esses ambientes
+          significa perder esse potencial.
+        </p>
+        <br>
+        <a href="https://youtu.be/H25gkWutB6w?si=o_oht6KxbfOaEfNi" target="_blank" class="btn-video">
+          Assista aqui
+        </a>
+      </div>
+    </div>
+
+    <div class="content" data-tipo="oficina">
+      <img src="imagens/oficina1.png" alt="Oficina 1">
+      <div class="text">
+        <h2>5 segredos pra planta dar flor</h2>
+        <p>
+          Plantas com flores é de encher os olhos de qualquer um. Um orquidófilo fica orgulhoso quando consegue florir
+          suas espécies, assim como um jardineiro de primeira viagem fica com o coração em festa ao notar que um botão
+          começa a surgir na sua plantinha. Carol Costa dá 5 dicas preciosas para quem é amante de flores e quer dar uma
+          forcinha pra suas espécies florirem. Sem receitas mirabolantes, tudo bem natural e usando recursos que todos
+          nós temos à mão.
+        </p>
+        <br>
+        <a href="https://minhasplantas.com.br/blogs/5-segredos-pra-planta-dar-flor/" target="_blank" class="btn-video">
+          Leia aqui
+        </a>
+      </div>
+    </div>
+
+    <div class="content" data-tipo="palestra">
+      <img src="imagens/palestra2.jpg" alt="Palestra 2">
+      <div class="text">
+        <h2>Paisagismo e jardinagem</h2>
+        <p>
+          Jardinagem e paisagismo tem tudo a ver... mas não são a mesma coisa! Quando alguns vasos ou um canteiro se
+          torna um projeto paisagístico? É preciso conhecer tudo sobre o plantio pra ser um paisagista? A jardineira
+          Carol Costa explica as diferenças entre as duas atividades e como uma é relacionada com a outra.
+        </p>
+        <br>
+        <a href="https://youtu.be/6jxPB0GhR2c" target="_blank" class="btn-video">
+          Assista aqui
+        </a>
+      </div>
+    </div>
+
+    <div class="content" data-tipo="palestra">
+      <img src="imagens/palestra3.jpg" alt="Palestra 3">
+      <div class="text">
+        <h2>Plantas de cores fortes: as lindas Crótons e as Ficus da Magna Flora.</h2>
+        <p>
+          Esse vídeo da Magna Flora mostra a beleza vibrante de suas plantas ornamentais, especialmente os crótons
+          coloridos e várias espécies de ficus. Ele apresenta um tour pelo viveiro, com destaque para as folhas
+          expressivas, o processo de cultivo profissional e a paixão dos proprietários pelo mundo das plantas.
+        </p>
+        <br>
+        <a href="https://youtu.be/Siqnhh5KXBs?si=UBXRm2bL2ElMCctg" target="_blank" class="btn-video">
+          Assista aqui
+        </a>
+      </div>
+    </div>
+
+    <div class="content" data-tipo="oficina">
+      <img src="imagens/oficina2.jpg" alt="Oficina 2">
+      <div class="text">
+        <h2>Como fazer uma horta suspensa</h2>
+        <p>
+          Cultivar temperos, pimentas e ervas aromáticas é uma forma de ter ingredientes fresquinhos sempre à mão na
+          hora
+          de cozinhar. Se não falta vontade para começar, mas a ausência de espaço é um problema, aposte na horta
+          suspensa
+          Com estruturas verticais, vasos médios e as nossas dicas você pode transformar um pequeno espaço ou parede
+          vazia
+          em um cantinho produtivo e lindo!
+        </p>
+        <br>
+        <a href="https://blog.plantei.com.br/horta-suspensa/" target="_blank" class="btn-video">
+          Leia aqui
+        </a>
+      </div>
+    </div>
+
+    <div class="content" data-tipo="oficina">
+      <img src="imagens/oficina3.jpg" alt="Oficina 3">
+      <div class="text">
+        <h2>como cultivar mudas frutíferas em casa</h2>
+        <p>
+          Seja no pomar, no quintal ou até mesmo em vasos, o plantio de frutíferas é uma ótima prática para cultivadores
+          que gostam de produzir alimentos!
+
+          Afinal, ter acesso as frutas da época na sua casa ou sítio garante ótimas experiências, como mais sabor à mesa
+          e economia no mercado.
+        </p>
+        <br>
+        <a href="https://www.florarainha.com.br/veja-como-cultivar-mudas-frutiferas-em-casa/" target="_blank"
+          class="btn-video">
+          Leia aqui
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="chatbot-container">
+    <div class="chat-toggle">
+      <img src="imagens/flor.png" alt="Abrir chat">
+    </div>
+
+    <div class="chat-window">
+      <div class="chat-header">Olá! 🌻 Precisa de ajuda?</div>
+      <div class="chat-body" id="chatBody"></div>
+      <div class="chat-input">
+        <input type="text" id="chatText" placeholder="Digite sua mensagem...">
+        <button id="chatSend">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Plantae - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+
+</html>

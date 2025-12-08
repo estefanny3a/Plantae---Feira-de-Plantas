@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantae - Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src=imagens/logo.png alt="logo plantae">
+        </div>
+        <nav>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="palestras.html">Palestras e Oficinas</a>
+            <a href="comunidade.html">Comunidades</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Pesquisar">
+            <button id="search-btn">
+                <h1>🔍︎</h1>
+            </button>
+            <div class="suggestions" id="searchOptions">
+                <div class="option" data-page="catalogo.html">
+                    <p>Pesquisar em <span>Catálogo</span></p>
+                </div>
+                <div class="option" data-page="palestras.html">
+                    <p>Pesquisar em <span>Palestras e Oficinas</span></p>
+                </div>
+                <div class="option" data-page="comunidade.html">
+                    <p>Pesquisar em <span>Comunidades</span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="catalogo">
+        <section class="lista">
+            <h2>Populares</h2>
+            <div class="cards">
+                <div class="card" data-tipo="flor">
+                    <img src=imagens/rosa.jpg alt="Rosa">
+                    <h3>Rosa <span>(Rosaceae)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Cientificamente, as rosas pertencem à família Rosaceae e ao gênero Rosa L., com mais de 100
+                            espécies e milhares de variedades, híbridos e cultivares.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="suc">
+                    <img src=imagens/cacto.jpg alt="Cacto">
+                    <h3>Cacto <span>(Cactaceae)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Cactaceae é uma família botânica de arbustos, árvores, ervas e lianas representada pelos
+                            cactos ou catos. São aproximadamente 142 gêneros e 1793 espécies aceitas.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/lavanda.jpeg" alt="Lavanda">
+                    <h3>Lavanda <span>(Lavandula Angustifolia)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta aromática com flores roxas e perfume marcante, conhecida por suas propriedades
+                            relaxantes. É muito cultivada em jardins e vasos, preferindo clima seco e sol pleno.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/samambaia.jpeg" alt="Samambaia">
+                    <h3>Samambaia <span>(Nephrolepis Exaltata)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta com longas frondes arqueadas e folhagem densa, ideal para vasos suspensos. Prefere
+                            ambientes úmidos e sombreados, sendo muito usada na decoração de interiores e varandas.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/felicidade.jpeg" alt="Árvore da Felicidade">
+                    <h3>Árvore da Felicidade <span>(Polyscias Fruticosa)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Arbusto ornamental com ramos delgados e folhas recortadas, muito utilizado em ambientes
+                            internos por seu visual elegante. É associado a boas energias e costuma ser cultivado em
+                            vasos.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="suc">
+                    <img src="imagens/echeveria.jpeg" alt="Suculenta Echeveria">
+                    <h3>Suculenta Echeveria <span>(Echeveria elegans)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta de porte baixo com formato de roseta, folhas carnudas que armazenam água e coloração
+                            que varia entre verde-claro e azulada. É ideal para ambientes ensolarados e requer pouca
+                            rega.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/adão.jpeg" alt="Costela de Adão">
+                    <h3>Costela de Adão <span>(Monstera deliciosa)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta tropical com folhas grandes, verdes e recortadas, muito valorizada por seu visual
+                            exótico. Adapta-se bem a ambientes internos com luz difusa e possui crescimento vigoroso.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="arv">
+                    <img src="imagens/pinheiro.jpeg" alt="Pinheiro">
+                    <h3>Pinheiro <span>(Pinus Elliottii)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Uma árvore conífera de grande porte, caracterizada por suas folhas em forma de agulhas e a
+                            produção de cones (pinha) em vez de flores ou frutos verdadeiros. É uma importante fonte de
+                            madeira e resina.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/avenca.jpeg" alt="Avenca">
+                    <h3>Avenca <span>(Adiantum capillus-veneris)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Uma samambaia delicada com folhas finamente divididas (frondes) e caules escuros e
+                            brilhantes. Requer ambientes úmidos e sombreados, sendo frequentemente encontrada em vasos
+                            ou jardins de sombra.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/espada.jpeg" alt="Espada de São Jorge">
+                    <h3>Espada de São Jorge <span>(Dracaena trifasciata)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Uma planta herbácea perene com folhas longas, rígidas e verticais, que são verdes escuras
+                            com faixas transversais cinza-esverdeadas. É muito apreciada como planta de interior por sua
+                            resistência e capacidade de purificar o ar.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/jiboia.jpeg" alt="Jiboia">
+                    <h3>Jiboia <span>(Epipremnum pinnatum)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta ornamental popular, conhecida por suas folhas verdes brilhantes, muitas vezes com
+                            manchas amarelas ou brancas. É uma trepadeira que se adapta bem a ambientes internos e é
+                            fácil de cuidar.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/alecrim.jpeg" alt="Alecrim">
+                    <h3>Alecrim <span>(Rosmarinus officinalis L.)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Um arbusto perene e aromático, conhecido por suas folhas em forma de agulha e flores
+                            pequenas, geralmente azuis ou roxas. É amplamente utilizado na culinária e na medicina
+                            popular por suas propriedades antissépticas e calmantes.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="arv">
+                    <img src="imagens/branco.jpeg" alt="Ipê Branco">
+                    <h3>Ipê Branco <span>(Handroanthus roseoalbus)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Árvore ornamental brasileira com floração branca intensa. Muito utilizada em ruas, praças e
+                            jardins devido à sua beleza e resistência.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/bromelia.jpeg" alt="Bromélia Imperial">
+                    <h3>Bromélia Imperial <span>(Alcantarea imperialis)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta ornamental de grande porte, com roseta de folhas largas e florescimento exuberante
+                            que surge em longas hastes. É muito usada em paisagismo tropical.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="arv">
+                    <img src="imagens/amarelo.jpeg" alt="Ipê Amarelo">
+                    <h3>Ipê Amarelo <span>(Handroanthus albus)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Árvore brasileira muito conhecida pela intensa floração amarela que ocorre no período seco.
+                            Suas flores formam um espetáculo visual e são símbolo de várias cidades.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="arv">
+                    <img src="imagens/roxo.jpeg" alt="Ipê Roxo">
+                    <h3>Ipê Roxo <span>(Handroanthus impetiginosus)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Árvore brasileira de grande beleza, famosa pela floração intensa em tons de roxo durante o
+                            período seco. Muito usada no paisagismo urbano e jardins amplos.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="suc">
+                    <img src="imagens/deerto.jpeg" alt="Rosa do Deserto">
+                    <h3>Rosa do Deserto <span>(Adenium obesum)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta ornamental muito valorizada por seu caule engrossado (caudex) e flores vibrantes.
+                            Tolera bem o sol e exige pouca água, sendo usada em jardins e coleções de suculentas.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/dracena.jpeg" alt="Pau d’Água">
+                    <h3>Pau d’Água <span>(Dracaena fragrans)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Possui folhas longas e arqueadas, geralmente com listras amareladas ou verde-claras.
+                            É muito usada como planta de interior e se adapta bem a diferentes níveis de luz.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/hortensia.jpeg" alt="Hortênsia">
+                    <h3>Hortênsia <span>(Hydrangea macrophylla)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta florífera que produz grandes buquês de flores coloridas, variando entre azul,
+                            rosa e branco. Seu tom pode mudar conforme o pH do solo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/manjericão.jpeg" alt="Manjericão">
+                    <h3>Manjericão <span>(Ocimum basilicum)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Erva aromática utilizada na culinária, com folhas verdes de aroma forte.
+                            Prefere sol pleno e regas frequentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/orquidea.jpeg" alt="Orquídea">
+                    <h3>Orquídea <span>(Phalaenopsis amabilis)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Orquídea de flores delicadas e longas hastes florais, muito popular em interiores.
+                            Floresce por longos períodos e exige cuidados moderados.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="suc">
+                    <img src="imagens/mandacaru.jpeg" alt="Cacto Mandacaru">
+                    <h3>Cacto Mandacaru <span>(Cereus jamacaru)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Cacto brasileiro de porte ereto, com colunas altas e flores brancas que se abrem à noite.
+                            Muito resistente à seca e ao sol intenso.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="suc">
+                    <img src="imagens/babosa.jpeg" alt="Babosa">
+                    <h3>Babosa <span>(Aloe vera)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta suculenta com folhas espessas cheias de gel usado em cosméticos e medicina natural.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="erb">
+                    <img src="imagens/begonia.jpeg" alt="Begônia">
+                    <h3>Begônia <span>(Begonia rex)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta ornamental de folhas grandes e coloridas, com padrões únicos em verde, roxo e prata.
+                            Prefere luz indireta.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/peperomia.jpeg" alt="Peperômia Melancia">
+                    <h3>Peperômia Melancia <span>(Peperomia argyreia)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta ornamental pequena com folhas redondas que lembram melancia. Ideal para interiores
+                            pela baixa manutenção.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/palmeira.jpeg" alt="Palmeira">
+                    <h3>Palmeira Areca <span>(Dypsis lutescens)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta de interior com folhas longas arqueadas em touceiras. Ajuda na umidade do ar e
+                            é muito usada na decoração.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/hibisco.jpeg" alt="Hibisco">
+                    <h3>Hibisco <span>(Hibiscus rosa-sinensis)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Arbusto florífero com flores grandes e vistosas em várias cores. Muito usado em jardins
+                            tropicais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/girassol.jpeg" alt="Girassol">
+                    <h3>Girassol <span>(Helianthus annuus)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta alta com grande inflorescência amarela que gira em direção ao sol durante o
+                            crescimento.
+                            Usada na ornamentação e na alimentação, sendo símbolo de vitalidade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/clorofito.jpeg" alt="Clorofito">
+                    <h3>Clorofito <span>(Chlorophytum comosum)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta pendente com folhas verdes finas e listras claras ao centro.
+                            Cresce rapidamente e produz pequenas mudas, excelente para vasos suspensos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/maranta.jpeg" alt="Maranta Pena-de-Pavão">
+                    <h3>Maranta Pena-de-Pavão <span>(Calathea makoyana)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta de folhagem com desenhos que lembram penas de pavão.
+                            Suas folhas fecham à noite e abrem de dia, movimento chamado nictinastia.
+                            Prefere ambientes úmidos e sombreados.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/anturio.jpeg" alt="Antúrio">
+                    <h3>Antúrio <span>(Anthurium andraeanum)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta apreciada por suas flores brilhantes em tons de vermelho, rosa ou branco.
+                            Possui folhagem verde intensa e se desenvolve bem em luz filtrada.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="suc">
+                    <img src="imagens/jade.jpeg" alt="Jade">
+                    <h3>Jade <span>(Crassula ovata)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Suculenta de tronco grosso e folhas ovaladas brilhantes.
+                            Resistente e associada à prosperidade, ideal para ambientes internos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fol">
+                    <img src="imagens/comigo.jpeg" alt="Comigo-Ninguém-Pode">
+                    <h3>Comigo-Ninguém-Pode <span>(Aglaonema commutatum)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta de folhagem ornamental, verde mesclada de prata ou branco.
+                            Resistente e tolerante à baixa luminosidade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/lirio.jpeg" alt="Lírio da Paz">
+                    <h3>Lírio da Paz <span>(Spathiphyllum wallisii)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta de interior com folhas verdes brilhantes e flores brancas elegantes.
+                            Prefere meia-sombra e é conhecida por purificar o ar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="suc">
+                    <img src="imagens/zamioculca.jpeg" alt="Zamioculca">
+                    <h3>Zamioculca <span>(Zamioculcas zamiifolia)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta extremamente resistente, com folhas grossas e brilhantes.
+                            Tolera baixa luminosidade e pouca água, ideal para interiores.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/onze.jpeg" alt="Onze horas">
+                    <h3>Onze horas <span>(Portulaca grandiflora)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta rasteira muito resistente, com flores coloridas que se abrem pela manhã.
+                            Muito usada para forração de jardins pela facilidade de cultivo e floração intensa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/camelia.jpeg" alt="Camélia">
+                    <h3>Camélia <span>(Camellia japonica)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Arbusto elegante, com flores grandes e arredondadas que podem ser vermelhas, rosas ou
+                            brancas.
+                            Muito apreciada em jardins clássicos e climas mais frios.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/violeta.jpeg" alt="Violeta">
+                    <h3>Violeta <span>(Saintpaulia ionantha)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta pequena ideal para interiores, com flores delicadas em tons de lilás, roxo, rosa ou
+                            branco.
+                            Prefere luz indireta e floresce o ano todo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/margarida.jpeg" alt="Margarida">
+                    <h3>Margarida <span>(Leucanthemum vulgare)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta florífera popular, com pétalas brancas e centro amarelo.
+                            Adapta-se bem ao sol pleno e é símbolo de delicadeza.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fru">
+                    <img src="imagens/goiabeira.jpeg" alt="Goiabeira">
+                    <h3>Goiabeira <span>(Psidium guajava)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Árvore de porte médio cultivada para produção de goiabas.
+                            Possui folhas simples e frutos aromáticos e nutritivos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fru">
+                    <img src="imagens/mamoeiro.jpeg" alt="Mamoeiro">
+                    <h3>Mamoeiro <span>(Carica papaya)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Árvore de rápido crescimento que produz o mamão.
+                            Possui tronco único e folhas grandes, preferindo clima quente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fru">
+                    <img src="imagens/bananeira.jpeg" alt="Bananeira">
+                    <h3>Bananeira <span>(Musa spp.)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta de grande porte com folhas largas e flores que originam cachos de banana.
+                            Típica de regiões tropicais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fru">
+                    <img src="imagens/pitangueira.jpeg" alt="Pitangueira">
+                    <h3>Pitangueira <span>(Eugenia uniflora)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Arbusto ou pequena árvore que produz frutos vermelhos ou roxos, doces e aromáticos.
+                            Muito usada em pomares caseiros e paisagismo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="fru">
+                    <img src="imagens/jabuticabeira.jpeg" alt="Jabuticabeira">
+                    <h3>Jabuticabeira <span>(Plinia cauliflora)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Árvore brasileira que produz frutos pequenos e escuros diretamente no tronco.
+                            Muito cultivada em quintais e também em vasos grandes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="arv">
+                    <img src="imagens/bonsai.jpeg" alt="Bonsai">
+                    <h3>Bonsai <span>(Ficus retusa)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Árvore cultivada em miniatura através de poda e modelagem.
+                            O Ficus é um dos bonsais mais populares, com folhas pequenas e tronco robusto.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/jasmim.jpeg" alt="Jasmin">
+                    <h3>Jasmin <span>(Jasminum officinale)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Trepadeira aromática com pequenas flores brancas perfumadas.
+                            Muito usada em muros, pérgolas e jardins.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/tulipa.jpeg" alt="Tulipa">
+                    <h3>Tulipa <span>(Tulipa gesneriana)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta famosa por suas flores elegantes em formato de taça e diversas cores.
+                            Prefere clima frio e é usada em jardins formais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/cravo.jpeg" alt="Cravo">
+                    <h3>Cravo <span>(Dianthus caryophyllus)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta conhecida por suas flores perfumadas e variadas cores.
+                            Muito usada em buquês e paisagismo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" data-tipo="flor">
+                    <img src="imagens/azaleia.jpeg" alt="Azaleia">
+                    <h3>Azaleia <span>(Rhododendron simsii)</span></h3>
+                    <div class="popup">
+                        <p>
+                            Planta comum em jardins brasileiros, com flores abundantes e coloridas.
+                            Prefere meia-sombra e solo bem drenado.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <aside class="filtros">
+            <h3>Filtros</h3>
+            <ul>
+                <li><button class="filtro" data-filtro="flor">Flores</button></li>
+                <li><button class="filtro" data-filtro="fol">Folhagens</button></li>
+                <li><button class="filtro" data-filtro="suc">Suculentas e Cactos</button></li>
+                <li><button class="filtro" data-filtro="arv">Árvores</button></li>
+                <li><button class="filtro" data-filtro="fru">Frutíferas</button></li>
+                <li><button class="filtro" data-filtro="todos">Mostrar todos</button></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <div class="chatbot-container">
+        <div class="chat-toggle">
+            <img src="imagens/flor.png" alt="Abrir chat">
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">Olá! 🌻 Precisa de ajuda?</div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-input">
+                <input type="text" id="chatText" placeholder="Digite sua mensagem...">
+                <button id="chatSend">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Plantae - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
